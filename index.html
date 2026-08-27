@@ -22,10 +22,6 @@
                         amber: {
                             400: '#fbbf24',
                             500: '#f59e0b',
-                        },
-                        navy: {
-                            800: '#1e293b',
-                            900: '#0f172a',
                         }
                     },
                     fontFamily: {
@@ -39,33 +35,19 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
         
-        /* Custom Blueprint Background Patterns */
         .bg-grid-pattern {
             background-size: 40px 40px;
             background-image: 
                 linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
                 linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
         }
-        .bg-grid-pattern-light {
-            background-size: 40px 40px;
-            background-image: 
-                linear-gradient(to right, rgba(15, 23, 42, 0.05) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
-        }
         
-        /* Technical Glassmorphism */
         .glass-panel {
             background: rgba(15, 23, 42, 0.75);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        .light .glass-panel {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(15, 23, 42, 0.1);
-        }
 
-        /* Blueprint Line Overlay */
         .blueprint-border {
             position: relative;
         }
@@ -84,20 +66,10 @@
             border-right: 2px solid #f59e0b;
         }
 
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0b0f19;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #334155;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #f59e0b;
-        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0b0f19; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #f59e0b; }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-slate-950 dark">
@@ -115,7 +87,6 @@
                 </div>
             </a>
 
-            <!-- Desktop Nav Links -->
             <div class="hidden md:flex items-center space-x-8 font-mono text-xs uppercase tracking-wider text-slate-300">
                 <a href="#about" class="hover:text-amber-400 transition-colors flex items-center gap-1"><span class="text-amber-500">01.</span> About</a>
                 <a href="#journey" class="hover:text-amber-400 transition-colors flex items-center gap-1"><span class="text-amber-500">02.</span> Experience</a>
@@ -135,18 +106,9 @@
 
     <!-- HERO SECTION -->
     <section class="relative min-h-screen pt-28 pb-16 flex items-center bg-grid-pattern overflow-hidden border-b border-slate-800">
-        <!-- Blueprint Grid & Accent Overlay Lines -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-1/4 left-0 w-full h-[1px] bg-amber-500/10"></div>
-            <div class="absolute top-3/4 left-0 w-full h-[1px] bg-amber-500/10"></div>
-            <div class="absolute left-1/3 top-0 w-[1px] h-full bg-amber-500/10"></div>
-            <div class="absolute right-1/3 top-0 w-[1px] h-full bg-amber-500/10"></div>
-        </div>
-
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
-                <!-- Left Content Area -->
                 <div class="lg:col-span-7 space-y-6">
                     <div class="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/10 border border-amber-500/30 rounded-full text-amber-400 font-mono text-xs">
                         <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
@@ -175,7 +137,6 @@
                         </a>
                     </div>
 
-                    <!-- Quick Spec Highlights -->
                     <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800/80 font-mono">
                         <div>
                             <span class="text-slate-500 text-xs uppercase block">EDUCATION</span>
@@ -195,12 +156,9 @@
                 <!-- Right Full Body Image Container -->
                 <div class="lg:col-span-5 flex justify-center">
                     <div class="relative w-full max-w-md">
-                        <!-- Technical Frame Overlay -->
-                        <div class="absolute -inset-2 border border-dashed border-amber-500/30 rounded-lg pointer-events-none"></div>
-                        
                         <div class="relative bg-slate-900 border border-slate-700/80 rounded-lg overflow-hidden shadow-2xl blueprint-border group">
                             <div class="aspect-[3/4] w-full overflow-hidden bg-slate-950 relative">
-                                <img src="WhatsApp Image 2026-07-29 at 11.10.17.jpeg" alt="Izwan Gunawan, S.T. - Graduation" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 filter contrast-105">
+                                <img src="g1.jpeg" alt="Izwan Gunawan, S.T. - Graduation" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
                                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
                             </div>
                             <div class="p-4 bg-slate-900 border-t border-slate-800 flex justify-between items-center font-mono text-xs text-slate-400">
@@ -223,17 +181,15 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
-                <!-- Left Image (Pas Foto) -->
                 <div class="lg:col-span-4 flex justify-center">
                     <div class="relative w-64 h-80 bg-slate-950 border border-slate-700 rounded-sm overflow-hidden blueprint-border shadow-xl">
-                        <img src="FOTO IZWAN GUNAWAN (1).jpg" alt="Izwan Gunawan Formal Photo" class="w-full h-full object-cover">
+                        <img src="g2.jpeg" alt="Izwan Gunawan Formal Photo" class="w-full h-full object-cover">
                         <div class="absolute bottom-0 inset-x-0 p-3 bg-slate-950/90 backdrop-blur-sm border-t border-slate-800 font-mono text-center">
                             <p class="text-xs text-amber-400 font-bold uppercase">Engineering Profile</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right Concise Content -->
                 <div class="lg:col-span-8 space-y-6">
                     <div>
                         <span class="font-mono text-amber-500 text-sm tracking-widest uppercase">// ABOUT ME</span>
@@ -281,61 +237,49 @@
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="font-mono text-amber-500 text-sm tracking-widest uppercase">// CAREER TIMELINE</span>
                 <h2 class="text-3xl font-bold text-white font-mono mt-1">Career Journey</h2>
-                <p class="text-slate-400 text-sm font-mono mt-2">Rekam jejak profesional dalam pengawasan dan perencanaan proyek konstruksi.</p>
             </div>
 
-            <!-- Horizontal Timeline (Desktop) & Vertical (Mobile) -->
-            <div class="relative">
-                <!-- Line -->
-                <div class="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-slate-800 -translate-y-1/2"></div>
-
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 relative z-10">
-                    
-                    <!-- Journey 1 -->
-                    <div class="bg-slate-900 p-6 border border-slate-800 rounded-sm blueprint-border hover:border-amber-500/50 transition-all">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-400 font-mono text-xs font-bold rounded">2023</span>
-                            <span class="text-xs font-mono text-slate-500">Jan - Mar 2023</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-white font-mono">PT Total Bangun Persada Tbk</h3>
-                        <p class="text-amber-500 text-sm font-mono mt-1 font-semibold">Assistant Site Engineer</p>
-                        <ul class="text-slate-400 text-xs space-y-2 mt-4 list-disc list-inside">
-                            <li>Membantu pengawasan konstruksi sesuai gambar kerja & spesifikasi.</li>
-                            <li>Inspeksi kualitas material & pengukuran volume proyek.</li>
-                            <li>Penerapan & monitoring standar K3 di area lapangan.</li>
-                        </ul>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 relative z-10">
+                <div class="bg-slate-900 p-6 border border-slate-800 rounded-sm blueprint-border">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-400 font-mono text-xs font-bold rounded">2023</span>
+                        <span class="text-xs font-mono text-slate-500">Jan - Mar 2023</span>
                     </div>
+                    <h3 class="text-lg font-bold text-white font-mono">PT Total Bangun Persada Tbk</h3>
+                    <p class="text-amber-500 text-sm font-mono mt-1 font-semibold">Assistant Site Engineer</p>
+                    <ul class="text-slate-400 text-xs space-y-2 mt-4 list-disc list-inside">
+                        <li>Membantu pengawasan konstruksi sesuai gambar kerja & spesifikasi.</li>
+                        <li>Inspeksi kualitas material & pengukuran volume proyek.</li>
+                        <li>Penerapan & monitoring standar K3 di area lapangan.</li>
+                    </ul>
+                </div>
 
-                    <!-- Journey 2 -->
-                    <div class="bg-slate-900 p-6 border border-slate-800 rounded-sm blueprint-border hover:border-amber-500/50 transition-all">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-400 font-mono text-xs font-bold rounded">2026</span>
-                            <span class="text-xs font-mono text-slate-500">Mar - Mei 2026</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-white font-mono">Kemendikdasmen</h3>
-                        <p class="text-amber-500 text-sm font-mono mt-1 font-semibold">Planning Engineer</p>
-                        <ul class="text-slate-400 text-xs space-y-2 mt-4 list-disc list-inside">
-                            <li>Penyusunan dokumen perencanaan teknis & gambar kerja.</li>
-                            <li>Perhitungan RAB, BOQ, dan Spesifikasi Teknis proyek.</li>
-                            <li>Survei lokasi & analisis kebutuhan struktur lapangan.</li>
-                        </ul>
+                <div class="bg-slate-900 p-6 border border-slate-800 rounded-sm blueprint-border">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-400 font-mono text-xs font-bold rounded">2026</span>
+                        <span class="text-xs font-mono text-slate-500">Mar - Mei 2026</span>
                     </div>
+                    <h3 class="text-lg font-bold text-white font-mono">Kemendikdasmen</h3>
+                    <p class="text-amber-500 text-sm font-mono mt-1 font-semibold">Planning Engineer</p>
+                    <ul class="text-slate-400 text-xs space-y-2 mt-4 list-disc list-inside">
+                        <li>Penyusunan dokumen perencanaan teknis & gambar kerja.</li>
+                        <li>Perhitungan RAB, BOQ, dan Spesifikasi Teknis proyek.</li>
+                        <li>Survei lokasi & analisis kebutuhan struktur lapangan.</li>
+                    </ul>
+                </div>
 
-                    <!-- Journey 3 -->
-                    <div class="bg-slate-900 p-6 border border-slate-800 rounded-sm blueprint-border hover:border-amber-500/50 transition-all">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-400 font-mono text-xs font-bold rounded">2026</span>
-                            <span class="text-xs font-mono text-slate-500">Juni - Sept 2026</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-white font-mono">PT Harmony Cahaya Land</h3>
-                        <p class="text-amber-500 text-sm font-mono mt-1 font-semibold">Site Supervisor & Quality Control</p>
-                        <ul class="text-slate-400 text-xs space-y-2 mt-4 list-disc list-inside">
-                            <li>Pengawasan ketat progres fisik perumahan (180 unit).</li>
-                            <li>Quality control (QC) hasil pekerjaan struktur & arsitektur.</li>
-                            <li>Koordinasi dengan tenaga kerja, vendor, dan manajemen.</li>
-                        </ul>
+                <div class="bg-slate-900 p-6 border border-slate-800 rounded-sm blueprint-border">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-400 font-mono text-xs font-bold rounded">2026</span>
+                        <span class="text-xs font-mono text-slate-500">Juni - Sept 2026</span>
                     </div>
-
+                    <h3 class="text-lg font-bold text-white font-mono">PT Harmony Cahaya Land</h3>
+                    <p class="text-amber-500 text-sm font-mono mt-1 font-semibold">Site Supervisor & Quality Control</p>
+                    <ul class="text-slate-400 text-xs space-y-2 mt-4 list-disc list-inside">
+                        <li>Pengawasan ketat progres fisik perumahan (180 unit).</li>
+                        <li>Quality control (QC) hasil pekerjaan struktur & arsitektur.</li>
+                        <li>Koordinasi dengan tenaga kerja, vendor, dan manajemen.</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -349,31 +293,23 @@
                     <span class="font-mono text-amber-500 text-sm tracking-widest uppercase">// PORTFOLIO SHOWCASE</span>
                     <h2 class="text-3xl font-bold text-white font-mono mt-1">Featured Projects ⭐</h2>
                 </div>
-                <p class="text-slate-400 font-mono text-xs mt-2 md:mt-0">Proyek-proyek utama yang telah diawasi & direncanakan</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-
-                <!-- Project Card 1: Harmony Cahaya Land -->
+                <!-- Project 1 -->
                 <div class="bg-slate-950 border border-slate-800 rounded-sm overflow-hidden blueprint-border flex flex-col justify-between group">
                     <div>
                         <div class="aspect-video w-full overflow-hidden bg-slate-900 relative">
-                            <img src="WhatsApp Image 2026-07-29 at 14.50.53.jpeg" alt="Harmony Cahaya Land Housing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute top-3 left-3 px-2 py-1 bg-slate-950/80 border border-amber-500/40 text-amber-400 font-mono text-[10px] uppercase">Residential Project</div>
+                            <img src="g3.jpeg" alt="Harmony Cahaya Land" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="p-6 space-y-4">
                             <h3 class="text-xl font-bold text-white font-mono">PT Harmony Cahaya Land</h3>
                             <div class="text-xs font-mono text-amber-500">Role: Site Supervisor & QC</div>
-                            
-                            <div class="border-t border-slate-800 pt-4">
-                                <span class="text-xs font-mono text-slate-400 block mb-2 uppercase">Responsibilities:</span>
-                                <ul class="text-slate-300 text-xs space-y-1.5 font-mono">
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> QC Pekerjaan Struktur & Finishing</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> Monitoring Progres Harian Proyek</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> Koordinasi Mandor & Subkontraktor</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> Pengawasan Retensi & Pemeliharaan</li>
-                                </ul>
-                            </div>
+                            <ul class="text-slate-300 text-xs space-y-1.5 font-mono">
+                                <li>✓ QC Pekerjaan Struktur & Finishing</li>
+                                <li>✓ Monitoring Progres Harian Proyek</li>
+                                <li>✓ Koordinasi Mandor & Subkontraktor</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="px-6 py-4 bg-slate-900 border-t border-slate-800 flex items-center justify-between font-mono text-xs">
@@ -382,54 +318,42 @@
                     </div>
                 </div>
 
-                <!-- Project Card 2: Kemendikdasmen -->
+                <!-- Project 2 -->
                 <div class="bg-slate-950 border border-slate-800 rounded-sm overflow-hidden blueprint-border flex flex-col justify-between group">
                     <div>
                         <div class="aspect-video w-full overflow-hidden bg-slate-900 relative">
-                            <img src="1783485398166.jpeg" alt="Kemendikdasmen Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute top-3 left-3 px-2 py-1 bg-slate-950/80 border border-amber-500/40 text-amber-400 font-mono text-[10px] uppercase">Government & Infrastructure</div>
+                            <img src="g4.jpeg" alt="Kemendikdasmen Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="p-6 space-y-4">
                             <h3 class="text-xl font-bold text-white font-mono">Kemendikdasmen</h3>
                             <div class="text-xs font-mono text-amber-500">Role: Planning Engineer</div>
-                            
-                            <div class="border-t border-slate-800 pt-4">
-                                <span class="text-xs font-mono text-slate-400 block mb-2 uppercase">Technical Deliverables:</span>
-                                <ul class="text-slate-300 text-xs space-y-1.5 font-mono">
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> Penyusunan RAB (Rencana Anggaran Biaya)</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> Penyusunan BOQ (Bill of Quantities)</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> Production of Architectural & Structural Drawings</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> Technical Specification Documents</li>
-                                </ul>
-                            </div>
+                            <ul class="text-slate-300 text-xs space-y-1.5 font-mono">
+                                <li>✓ Penyusunan RAB & BOQ</li>
+                                <li>✓ Drawing & Technical Specification</li>
+                                <li>✓ Survei & Perhitungan Volume</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="px-6 py-4 bg-slate-900 border-t border-slate-800 flex items-center justify-between font-mono text-xs">
                         <span class="text-slate-400">Scope:</span>
-                        <span class="text-amber-400 font-bold">Perencanaan Revitalisasi SMP</span>
+                        <span class="text-amber-400 font-bold">Revitalisasi Sekolah</span>
                     </div>
                 </div>
 
-                <!-- Project Card 3: Total Bangun Persada -->
+                <!-- Project 3 -->
                 <div class="bg-slate-950 border border-slate-800 rounded-sm overflow-hidden blueprint-border flex flex-col justify-between group">
                     <div>
                         <div class="aspect-video w-full overflow-hidden bg-slate-900 relative">
-                            <img src="1769866219198.jpeg" alt="Mall Ciplaz Project Garut" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute top-3 left-3 px-2 py-1 bg-slate-950/80 border border-amber-500/40 text-amber-400 font-mono text-[10px] uppercase">Commercial High-Rise</div>
+                            <img src="g5.jpeg" alt="Total Bangun Persada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="p-6 space-y-4">
                             <h3 class="text-xl font-bold text-white font-mono">PT Total Bangun Persada Tbk</h3>
                             <div class="text-xs font-mono text-amber-500">Role: Assistant Site Engineer</div>
-                            
-                            <div class="border-t border-slate-800 pt-4">
-                                <span class="text-xs font-mono text-slate-400 block mb-2 uppercase">Responsibilities:</span>
-                                <ul class="text-slate-300 text-xs space-y-1.5 font-mono">
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> Pengawasan Konstruksi Struktur Gedung</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> Inspeksi Pengujian Mutu Material (QC)</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> Calculation of Volume Take Off & Opname</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> HSE & K3 Supervision di Area Lapangan</li>
-                                </ul>
-                            </div>
+                            <ul class="text-slate-300 text-xs space-y-1.5 font-mono">
+                                <li>✓ Pengawasan Lapangan & QC</li>
+                                <li>✓ Volume Take Off & Inspection</li>
+                                <li>✓ Penerapan Standar K3</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="px-6 py-4 bg-slate-900 border-t border-slate-800 flex items-center justify-between font-mono text-xs">
@@ -437,92 +361,41 @@
                         <span class="text-amber-400 font-bold">Mall City Plaza Garut</span>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- TECHNICAL SKILLS SECTION -->
-    <section id="skills" class="py-24 bg-slate-950 border-b border-slate-800 bg-grid-pattern">
+    <section id="skills" class="py-24 bg-slate-950 border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <span class="font-mono text-amber-500 text-sm tracking-widest uppercase">// COMPETENCIES</span>
                 <h2 class="text-3xl font-bold text-white font-mono mt-1">Technical Skills</h2>
-                <p class="text-slate-400 text-xs font-mono mt-2">Daftar perangkat lunak dan keahlian teknis yang dikuasai secara objektif.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                
-                <!-- Software Stack -->
                 <div class="bg-slate-900 p-8 border border-slate-800 rounded-sm blueprint-border">
-                    <h3 class="text-lg font-bold text-white font-mono mb-6 flex items-center gap-2">
-                        <i data-lucide="cpu" class="w-5 h-5 text-amber-500"></i> Technical Software
-                    </h3>
+                    <h3 class="text-lg font-bold text-white font-mono mb-6">Technical Software</h3>
                     <div class="grid grid-cols-2 gap-4 font-mono text-sm">
-                        <div class="p-4 bg-slate-950 border border-slate-800 flex items-center gap-3">
-                            <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
-                            <div>
-                                <span class="text-white font-bold block">AutoCAD</span>
-                                <span class="text-[10px] text-slate-500">Drafting & Shop Drawing</span>
-                            </div>
-                        </div>
-                        <div class="p-4 bg-slate-950 border border-slate-800 flex items-center gap-3">
-                            <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
-                            <div>
-                                <span class="text-white font-bold block">ETABS</span>
-                                <span class="text-[10px] text-slate-500">Structural Analysis</span>
-                            </div>
-                        </div>
-                        <div class="p-4 bg-slate-950 border border-slate-800 flex items-center gap-3">
-                            <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
-                            <div>
-                                <span class="text-white font-bold block">Microsoft Excel</span>
-                                <span class="text-[10px] text-slate-500">RAB, BOQ & Volume</span>
-                            </div>
-                        </div>
-                        <div class="p-4 bg-slate-950 border border-slate-800 flex items-center gap-3">
-                            <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
-                            <div>
-                                <span class="text-white font-bold block">MS Project</span>
-                                <span class="text-[10px] text-slate-500">Scheduling & S-Curve</span>
-                            </div>
-                        </div>
-                        <div class="p-4 bg-slate-950 border border-slate-800 flex items-center gap-3">
-                            <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
-                            <div>
-                                <span class="text-white font-bold block">Microsoft Word</span>
-                                <span class="text-[10px] text-slate-500">Technical Reporting</span>
-                            </div>
-                        </div>
-                        <div class="p-4 bg-slate-950 border border-slate-800 flex items-center gap-3">
-                            <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
-                            <div>
-                                <span class="text-white font-bold block">PowerPoint</span>
-                                <span class="text-[10px] text-slate-500">Project Presentation</span>
-                            </div>
-                        </div>
+                        <div class="p-4 bg-slate-950 border border-slate-800"><span class="text-amber-400">AutoCAD</span></div>
+                        <div class="p-4 bg-slate-950 border border-slate-800"><span class="text-amber-400">ETABS</span></div>
+                        <div class="p-4 bg-slate-950 border border-slate-800"><span class="text-amber-400">MS Excel</span></div>
+                        <div class="p-4 bg-slate-950 border border-slate-800"><span class="text-amber-400">MS Project</span></div>
                     </div>
                 </div>
 
-                <!-- Core Competencies -->
                 <div class="bg-slate-900 p-8 border border-slate-800 rounded-sm blueprint-border">
-                    <h3 class="text-lg font-bold text-white font-mono mb-6 flex items-center gap-2">
-                        <i data-lucide="layers" class="w-5 h-5 text-amber-500"></i> Core Competencies
-                    </h3>
+                    <h3 class="text-lg font-bold text-white font-mono mb-6">Core Competencies</h3>
                     <div class="flex flex-wrap gap-2.5 font-mono text-xs">
                         <span class="px-3 py-2 bg-slate-950 border border-slate-800 text-slate-200">Site Supervision</span>
                         <span class="px-3 py-2 bg-slate-950 border border-slate-800 text-slate-200">Quality Control (QC)</span>
                         <span class="px-3 py-2 bg-slate-950 border border-slate-800 text-slate-200">Construction Management</span>
-                        <span class="px-3 py-2 bg-slate-950 border border-slate-800 text-slate-200">RAB & Cost Estimation</span>
-                        <span class="px-3 py-2 bg-slate-950 border border-slate-800 text-slate-200">BOQ Analysis</span>
+                        <span class="px-3 py-2 bg-slate-950 border border-slate-800 text-slate-200">RAB & BOQ</span>
                         <span class="px-3 py-2 bg-slate-950 border border-slate-800 text-slate-200">Volume Take Off</span>
                         <span class="px-3 py-2 bg-slate-950 border border-slate-800 text-slate-200">Shop Drawing Review</span>
                         <span class="px-3 py-2 bg-slate-950 border border-slate-800 text-slate-200">K3 Konstruksi</span>
-                        <span class="px-3 py-2 bg-slate-950 border border-slate-800 text-slate-200">Structure Analysis</span>
-                        <span class="px-3 py-2 bg-slate-950 border border-slate-800 text-slate-200">Building Inspection</span>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -531,130 +404,16 @@
     <section id="thesis" class="py-24 bg-slate-900 border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <div class="lg:col-span-6 space-y-6">
+                <div class="lg:col-span-12 space-y-4">
                     <span class="font-mono text-amber-500 text-sm tracking-widest uppercase">// ACADEMIC RESEARCH</span>
                     <h2 class="text-3xl font-bold text-white font-mono">Final Project / Skripsi</h2>
-                    
                     <div class="p-6 bg-slate-950 border border-slate-800 rounded-sm blueprint-border">
-                        <h3 class="text-xl font-bold text-amber-400 font-mono leading-snug">
+                        <h3 class="text-xl font-bold text-amber-400 font-mono">
                             "Effect of Bamboo Leaf Ash and Cement Stabilization on Rigid Pavement Deflection"
                         </h3>
-                        <p class="text-slate-400 text-xs font-mono mt-2">Studi Stabilisasi Tanah & Lapis Perkerasan Kaku (Rigid Pavement)</p>
-                    </div>
-
-                    <div class="grid grid-cols-2 gap-4 font-mono text-xs">
-                        <div class="p-3 bg-slate-950 border border-slate-800">
-                            <span class="text-slate-500 block uppercase">SOFTWARE</span>
-                            <span class="text-white font-bold">ETABS / FEM</span>
-                        </div>
-                        <div class="p-3 bg-slate-950 border border-slate-800">
-                            <span class="text-slate-500 block uppercase">METHOD</span>
-                            <span class="text-white font-bold">Finite Element Method</span>
-                        </div>
-                    </div>
-
-                    <div class="space-y-2 font-mono text-xs">
-                        <span class="text-slate-400 uppercase block">Research Results:</span>
-                        <div class="p-3 bg-amber-500/10 border border-amber-500/30 text-slate-200 flex justify-between">
-                            <span>CBR Value:</span>
-                            <span class="text-amber-400 font-bold">INCREASED ↑</span>
-                        </div>
-                        <div class="p-3 bg-amber-500/10 border border-amber-500/30 text-slate-200 flex justify-between">
-                            <span>Pavement Deflection:</span>
-                            <span class="text-amber-400 font-bold">DECREASED ↓</span>
-                        </div>
+                        <p class="text-slate-300 text-sm font-mono mt-2">Software: ETABS (Finite Element Method) | Result: CBR Increased, Deflection Decreased</p>
                     </div>
                 </div>
-
-                <!-- ETABS Structural Graphic Simulation -->
-                <div class="lg:col-span-6">
-                    <div class="bg-slate-950 p-6 border border-slate-800 rounded-sm blueprint-border relative">
-                        <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-4 font-mono text-xs">
-                            <span class="text-amber-500 font-bold">// ETABS MODEL SIMULATION</span>
-                            <span class="text-slate-500">RIGID PAVEMENT FEM ANALYSIS</span>
-                        </div>
-                        <!-- Canvas / Graphic Simulation -->
-                        <div class="h-64 w-full bg-slate-900 border border-slate-800 relative flex items-center justify-center overflow-hidden">
-                            <div class="absolute inset-0 opacity-20 bg-grid-pattern"></div>
-                            
-                            <!-- Wireframe Structural Rigidity Deflection Graphic -->
-                            <svg class="w-full h-full p-4" viewBox="0 0 400 200">
-                                <!-- Mesh Grid -->
-                                <path d="M 50 150 Q 200 170 350 150" fill="none" stroke="#f59e0b" stroke-width="3" stroke-dasharray="4"/>
-                                <path d="M 50 100 Q 200 100 350 100" fill="none" stroke="#38bdf8" stroke-width="2"/>
-                                <!-- Nodes -->
-                                <circle cx="50" cy="150" r="4" fill="#f59e0b"/>
-                                <circle cx="125" cy="162" r="4" fill="#f59e0b"/>
-                                <circle cx="200" cy="165" r="5" fill="#ef4444"/>
-                                <circle cx="275" cy="162" r="4" fill="#f59e0b"/>
-                                <circle cx="350" cy="150" r="4" fill="#f59e0b"/>
-                                <!-- Vectors -->
-                                <line x1="200" y1="50" x2="200" y2="155" stroke="#ef4444" stroke-width="2" stroke-dasharray="2"/>
-                                <polygon points="200,160 195,145 205,145" fill="#ef4444"/>
-                                <text x="210" y="80" fill="#ef4444" font-family="monospace" font-size="10">Max Deflection (Δ)</text>
-                            </svg>
-                        </div>
-                        <div class="mt-3 text-right font-mono text-[10px] text-slate-500">
-                            Finite Element Method Deflection Verification
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- CERTIFICATIONS SECTION -->
-    <section class="py-24 bg-slate-950 border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="font-mono text-amber-500 text-sm tracking-widest uppercase">// CREDENTIALS</span>
-                <h2 class="text-3xl font-bold text-white font-mono mt-1">Certifications & Training</h2>
-                <p class="text-slate-400 text-xs font-mono mt-2">Sertifikat Kompetensi Kerja (SKK) Resmi PUPR & BNSP</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                
-                <!-- Cert 1 -->
-                <div class="bg-slate-900 p-6 border border-slate-800 rounded-sm blueprint-border hover:border-amber-500 transition-all text-center">
-                    <div class="w-12 h-12 bg-amber-500/10 border border-amber-500/30 rounded-full flex items-center justify-center mx-auto mb-4 text-amber-500 text-xl font-mono">
-                        🏅
-                    </div>
-                    <span class="text-[10px] font-mono text-slate-500 uppercase block">SKK PUPR - LSP</span>
-                    <h3 class="text-base font-bold text-white font-mono mt-1">Manager Lapangan Pelaksanaan Gedung</h3>
-                    <p class="text-xs font-mono text-amber-400 mt-2">Valid until: Juli 2030</p>
-                </div>
-
-                <!-- Cert 2 -->
-                <div class="bg-slate-900 p-6 border border-slate-800 rounded-sm blueprint-border hover:border-amber-500 transition-all text-center">
-                    <div class="w-12 h-12 bg-amber-500/10 border border-amber-500/30 rounded-full flex items-center justify-center mx-auto mb-4 text-amber-500 text-xl font-mono">
-                        🏅
-                    </div>
-                    <span class="text-[10px] font-mono text-slate-500 uppercase block">SKK BNSP</span>
-                    <h3 class="text-base font-bold text-white font-mono mt-1">Personil K3 Konstruksi Bangunan</h3>
-                    <p class="text-xs font-mono text-amber-400 mt-2">Valid until: September 2026</p>
-                </div>
-
-                <!-- Cert 3 -->
-                <div class="bg-slate-900 p-6 border border-slate-800 rounded-sm blueprint-border hover:border-amber-500 transition-all text-center">
-                    <div class="w-12 h-12 bg-amber-500/10 border border-amber-500/30 rounded-full flex items-center justify-center mx-auto mb-4 text-amber-500 text-xl font-mono">
-                        🏅
-                    </div>
-                    <span class="text-[10px] font-mono text-slate-500 uppercase block">SKK PUPR - LSP</span>
-                    <h3 class="text-base font-bold text-white font-mono mt-1">Pelaksana Pemeliharaan Jalan</h3>
-                    <p class="text-xs font-mono text-amber-400 mt-2">Valid until: Juli 2029</p>
-                </div>
-
-            </div>
-
-            <!-- Additional Training -->
-            <div class="mt-8 p-4 bg-slate-900 border border-slate-800 rounded-sm font-mono text-xs flex flex-col sm:flex-row items-center justify-between text-slate-300">
-                <div class="flex items-center gap-3">
-                    <i data-lucide="award" class="w-5 h-5 text-amber-500"></i>
-                    <span><strong>Pelatihan BIM (Building Information Modelling)</strong> - Balai Jasa Konstruksi Wilayah III Jakarta</span>
-                </div>
-                <span class="text-slate-500 mt-2 sm:mt-0">Juli 2023</span>
             </div>
         </div>
     </section>
@@ -667,105 +426,46 @@
                     <span class="font-mono text-amber-500 text-sm tracking-widest uppercase">// FIELD DOCUMENTATION</span>
                     <h2 class="text-3xl font-bold text-white font-mono mt-1">Gallery</h2>
                 </div>
-                <p class="text-slate-400 font-mono text-xs mt-2 md:mt-0">Dokumentasi Inspeksi Lapangan, Pengujian Material & Model BIM (Klik untuk Fullscreen)</p>
             </div>
 
-            <!-- Image Grid -->
+            <!-- Image Grid Matches GitHub Files g1.jpeg - g16.jpeg -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                
-                <!-- Item 1 -->
-                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden relative cursor-pointer group blueprint-border" onclick="openLightbox('1769866219198_3.jpeg')">
-                    <img src="1769866219198_3.jpeg" alt="Pengawasan Lapangan Gedung Komersial" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center font-mono text-xs text-amber-400 font-bold p-2 text-center">
-                        Site Inspection - Structure
-                    </div>
+                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden cursor-pointer blueprint-border" onclick="openLightbox('g1.jpeg')">
+                    <img src="g1.jpeg" class="w-full h-full object-cover hover:scale-105 transition-transform">
                 </div>
-
-                <!-- Item 2 -->
-                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden relative cursor-pointer group blueprint-border" onclick="openLightbox('1769865866286.jpeg')">
-                    <img src="1769865866286.jpeg" alt="Inspeksi Tulangan Besi Beton" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center font-mono text-xs text-amber-400 font-bold p-2 text-center">
-                        Inspeksi Tulangan Rebar
-                    </div>
+                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden cursor-pointer blueprint-border" onclick="openLightbox('g5.jpeg')">
+                    <img src="g5.jpeg" class="w-full h-full object-cover hover:scale-105 transition-transform">
                 </div>
-
-                <!-- Item 3 -->
-                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden relative cursor-pointer group blueprint-border" onclick="openLightbox('1769868655479.jpeg')">
-                    <img src="1769868655479.jpeg" alt="Tekla Structures BIM Model" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center font-mono text-xs text-amber-400 font-bold p-2 text-center">
-                        BIM 3D Model - Tekla
-                    </div>
+                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden cursor-pointer blueprint-border" onclick="openLightbox('g7.jpeg')">
+                    <img src="g7.jpeg" class="w-full h-full object-cover hover:scale-105 transition-transform">
                 </div>
-
-                <!-- Item 4 -->
-                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden relative cursor-pointer group blueprint-border" onclick="openLightbox('1769865980831.jpeg')">
-                    <img src="1769865980831.jpeg" alt="Slump Test QC Beton" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center font-mono text-xs text-amber-400 font-bold p-2 text-center">
-                        QC Concrete Sampling
-                    </div>
+                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden cursor-pointer blueprint-border" onclick="openLightbox('g8.jpeg')">
+                    <img src="g8.jpeg" class="w-full h-full object-cover hover:scale-105 transition-transform">
                 </div>
-
-                <!-- Item 5 -->
-                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden relative cursor-pointer group blueprint-border" onclick="openLightbox('1769868347566.jpeg')">
-                    <img src="1769868347566.jpeg" alt="Trimble Laser Scanner Survey" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center font-mono text-xs text-amber-400 font-bold p-2 text-center">
-                        Survei Trimble Laser
-                    </div>
+                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden cursor-pointer blueprint-border" onclick="openLightbox('g9.jpeg')">
+                    <img src="g9.jpeg" class="w-full h-full object-cover hover:scale-105 transition-transform">
                 </div>
-
-                <!-- Item 6 -->
-                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden relative cursor-pointer group blueprint-border" onclick="openLightbox('WhatsApp Image 2026-07-29 at 15.01.24.jpeg')">
-                    <img src="WhatsApp Image 2026-07-29 at 15.01.24.jpeg" alt="Pengawasan Dinding & Pembesian" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center font-mono text-xs text-amber-400 font-bold p-2 text-center">
-                        Pengawasan Struktur
-                    </div>
+                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden cursor-pointer blueprint-border" onclick="openLightbox('g10.jpeg')">
+                    <img src="g10.jpeg" class="w-full h-full object-cover hover:scale-105 transition-transform">
                 </div>
-
-                <!-- Item 7 -->
-                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden relative cursor-pointer group blueprint-border" onclick="openLightbox('1769868666773.jpeg')">
-                    <img src="1769868666773.jpeg" alt="Tekla Rebar Detailing" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center font-mono text-xs text-amber-400 font-bold p-2 text-center">
-                        Rebar Detailing BIM
-                    </div>
+                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden cursor-pointer blueprint-border" onclick="openLightbox('g11.jpeg')">
+                    <img src="g11.jpeg" class="w-full h-full object-cover hover:scale-105 transition-transform">
                 </div>
-
-                <!-- Item 8 -->
-                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden relative cursor-pointer group blueprint-border" onclick="openLightbox('1769865893055.jpeg')">
-                    <img src="1769865893055.jpeg" alt="Project Site Plan Board" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center font-mono text-xs text-amber-400 font-bold p-2 text-center">
-                        Site Plan & K3 Board
-                    </div>
+                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden cursor-pointer blueprint-border" onclick="openLightbox('g12.jpeg')">
+                    <img src="g12.jpeg" class="w-full h-full object-cover hover:scale-105 transition-transform">
                 </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- METRICS & STATISTICS SECTION -->
-    <section class="py-20 bg-slate-950 border-b border-slate-800 bg-grid-pattern">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 font-mono text-center">
-                
-                <div class="p-6 bg-slate-900 border border-slate-800 rounded-sm">
-                    <div class="text-4xl font-extrabold text-amber-400 mb-1">180+</div>
-                    <div class="text-xs text-slate-400 uppercase">Housing Units Monitored</div>
+                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden cursor-pointer blueprint-border" onclick="openLightbox('g13.jpeg')">
+                    <img src="g13.jpeg" class="w-full h-full object-cover hover:scale-105 transition-transform">
                 </div>
-
-                <div class="p-6 bg-slate-900 border border-slate-800 rounded-sm">
-                    <div class="text-4xl font-extrabold text-amber-400 mb-1">3</div>
-                    <div class="text-xs text-slate-400 uppercase">Professional SKK Certifications</div>
+                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden cursor-pointer blueprint-border" onclick="openLightbox('g14.jpeg')">
+                    <img src="g14.jpeg" class="w-full h-full object-cover hover:scale-105 transition-transform">
                 </div>
-
-                <div class="p-6 bg-slate-900 border border-slate-800 rounded-sm">
-                    <div class="text-4xl font-extrabold text-amber-400 mb-1">3</div>
-                    <div class="text-xs text-slate-400 uppercase">Industry Experiences</div>
+                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden cursor-pointer blueprint-border" onclick="openLightbox('g15.jpeg')">
+                    <img src="g15.jpeg" class="w-full h-full object-cover hover:scale-105 transition-transform">
                 </div>
-
-                <div class="p-6 bg-slate-900 border border-slate-800 rounded-sm">
-                    <div class="text-4xl font-extrabold text-amber-400 mb-1">3.73</div>
-                    <div class="text-xs text-slate-400 uppercase">Cumulative GPA (IPK)</div>
+                <div class="aspect-square bg-slate-950 border border-slate-800 overflow-hidden cursor-pointer blueprint-border" onclick="openLightbox('g16.jpeg')">
+                    <img src="g16.jpeg" class="w-full h-full object-cover hover:scale-105 transition-transform">
                 </div>
-
             </div>
         </div>
     </section>
@@ -773,51 +473,31 @@
     <!-- CONTACT SECTION -->
     <section id="contact" class="py-24 bg-slate-900 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            
-            <span class="font-mono text-amber-500 text-sm tracking-widest uppercase">// GET IN TOUCH</span>
-            <h2 class="text-4xl font-extrabold text-white font-mono mt-2 mb-6">Let's Work Together</h2>
-            <p class="text-slate-300 max-w-xl mx-auto text-base mb-10">
-                Terbuka untuk kesempatan karir, proyek pengawasan lapangan, quality control, maupun perencanaan infrastruktur teknis.
-            </p>
-
+            <h2 class="text-4xl font-extrabold text-white font-mono mb-6">Let's Work Together</h2>
             <div class="flex flex-wrap justify-center items-center gap-6 font-mono text-sm">
-                
                 <a href="mailto:izwangunawan10@gmail.com" class="px-6 py-3.5 bg-slate-950 border border-slate-800 hover:border-amber-500 text-slate-200 flex items-center gap-3 rounded-sm transition-all">
                     <i data-lucide="mail" class="w-4 h-4 text-amber-500"></i> izwangunawan10@gmail.com
                 </a>
-
                 <a href="https://wa.me/6285640388542" target="_blank" class="px-6 py-3.5 bg-slate-950 border border-slate-800 hover:border-amber-500 text-slate-200 flex items-center gap-3 rounded-sm transition-all">
                     <i data-lucide="phone" class="w-4 h-4 text-amber-500"></i> +62 856-4038-8542
                 </a>
-
                 <a href="https://www.linkedin.com/in/izwan-gunawan-8664923a0" target="_blank" class="px-6 py-3.5 bg-slate-950 border border-slate-800 hover:border-amber-500 text-slate-200 flex items-center gap-3 rounded-sm transition-all">
                     <i data-lucide="linkedin" class="w-4 h-4 text-amber-500"></i> LinkedIn Profile
                 </a>
-
             </div>
-
-            <div class="mt-12 pt-8 border-t border-slate-800/80 text-slate-500 font-mono text-xs flex flex-col sm:flex-row items-center justify-between">
-                <span>Garut, Jawa Barat, Indonesia</span>
-                <span class="mt-2 sm:mt-0">© 2026 Izwan Gunawan, S.T. All rights reserved.</span>
-            </div>
-
         </div>
     </section>
 
-    <!-- LIGHTBOX MODAL FOR GALLERY -->
+    <!-- LIGHTBOX MODAL -->
     <div id="lightbox" class="fixed inset-0 bg-slate-950/90 z-50 hidden flex items-center justify-center p-4 backdrop-blur-md" onclick="closeLightbox()">
         <div class="max-w-4xl w-full max-h-[90vh] relative">
-            <img id="lightbox-img" src="" alt="Enlarged documentation photo" class="w-full h-full object-contain rounded border border-slate-700">
+            <img id="lightbox-img" src="" class="w-full h-full object-contain rounded border border-slate-700">
             <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white bg-slate-900 border border-slate-700 p-2 rounded-full font-mono">✕</button>
         </div>
     </div>
 
-    <!-- Scripts -->
     <script>
-        // Initialize Lucide Icons
         lucide.createIcons();
-
-        // Lightbox functionality
         function openLightbox(src) {
             document.getElementById('lightbox-img').src = src;
             document.getElementById('lightbox').classList.remove('hidden');
